@@ -40,8 +40,8 @@ export default function ProjectForm ({addProject}) {
         <form className="NewProject" onSubmit= {handleSubmit}>
             <h3>Add Project</h3>
 
-            <label>
-                Title
+            <label className ="FormInput">
+                <strong>Title</strong>
                 <input
                 type= "text"
                 name= "title"
@@ -50,16 +50,18 @@ export default function ProjectForm ({addProject}) {
                 />
             </label>
         
-             <label>
-                Description
-                <input
+             <label className ="FormInput">
+                <strong>Description</strong>
+
+                <textarea
                 type= "text"
                 name= "description"
                 value= {formData.description}
                 onChange= {handleChange}
+                className= "descriptionTextArea"
                 />
              </label>
-             <button type="submit">Add</button>
+             <button type="submit" className= "submitBtn">Add</button>
         </form>
     )
 }

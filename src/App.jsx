@@ -22,13 +22,13 @@ function App() {
 
   }, [])
   
-    const addProject=newProject =>setProjects(previousProjects =>[...previousProjects, newProject])
-    const displayedProject = projects.filter((project) => (project.title || "").toLowerCase().includes(search.toLowerCase()))
+    const addProject=(newProject) =>setProjects(previousProjects =>[...previousProjects, newProject])
+    const displayedProjects = projects.filter((project) => (project.title || "").toLowerCase().includes(search.toLowerCase()))
     return (
     <div>
       <Header />
-      <ProjectForm />
-      <ProjectContainer projects={displayedProject} addProject={addProject} search={search} onSearch={setSearch}/>
+      <ProjectForm addProject= {addProject}/>
+      <ProjectContainer projects={displayedProjects} addProject={addProject} search={search} onSearch={setSearch}/>
     </div>
    
   )

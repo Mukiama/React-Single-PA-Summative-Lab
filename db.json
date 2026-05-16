@@ -49,6 +49,16 @@
       "title": "Moringa",
       "description": "Full-stack software engineering",
       "id": 6
+    },
+    {
+      "title": "Muthara",
+      "description": "Community Resource Center",
+      "id": 7
+    },
+    {
+      "title": "Government of Kenya",
+      "description": "Taxes",
+      "id": 8
     }
   ]
 }
